@@ -1,0 +1,196 @@
+.wp-block-getwid-images-slider .slick-prev,
+.wp-block-getwid-images-slider .slick-next,
+.wp-block-getwid-media-text-slider .slick-prev,
+.wp-block-getwid-media-text-slider .slick-next,
+.wp-block-getwid-post-slider .slick-prev,
+.wp-block-getwid-post-slider .slick-next,
+.wp-block-getwid-post-carousel .slick-prev,
+.wp-block-getwid-post-carousel .slick-next {
+  font-size: 0;
+}
+.wp-block-getwid-images-slider .slick-dots,
+.wp-block-getwid-media-text-slider .slick-dots,
+.wp-block-getwid-post-slider .slick-dots,
+.wp-block-getwid-post-carousel .slick-dots {
+  margin: 0 auto !important;
+}
+
+.wp-block-getwid-map__key-form,
+.wp-block-getwid-instagram__key-form,
+.wp-block-getwid-mailchimp__key-form {
+  padding: 1em;
+}
+.wp-block-getwid-map__key-form .form-title,
+.wp-block-getwid-instagram__key-form .form-title,
+.wp-block-getwid-mailchimp__key-form .form-title {
+  margin-bottom: 0.5em;
+  display: block;
+}
+.wp-block-getwid-map__key-form .form-description,
+.wp-block-getwid-instagram__key-form .form-description,
+.wp-block-getwid-mailchimp__key-form .form-description {
+  font-size: 0.875em;
+  margin-top: 1em;
+  display: block;
+}
+
+.wp-block-getwid-mailchimp .getwid-field-label,
+.wp-block-getwid-contact-form .getwid-field-label {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.wp-block-getwid-mailchimp .getwid-field-label .required,
+.wp-block-getwid-contact-form .getwid-field-label .required {
+  margin-right: 10px;
+  color: inherit;
+}
+.wp-block-getwid-mailchimp .components-base-control__label,
+.wp-block-getwid-contact-form .components-base-control__label {
+  width: 100%;
+}
+.wp-block-getwid-mailchimp .getwid-field-label__input,
+.wp-block-getwid-contact-form .getwid-field-label__input {
+  border: 0;
+  box-shadow: none;
+  outline: none;
+  background: transparent;
+}
+.wp-block-getwid-mailchimp .getwid-field-label__input:focus,
+.wp-block-getwid-contact-form .getwid-field-label__input:focus {
+  padding: 2px 10px;
+  background: #fff;
+}
+.wp-block-getwid-mailchimp .getwid-field-label__required,
+.wp-block-getwid-contact-form .getwid-field-label__required {
+  margin-right: 10px;
+}
+.wp-block-getwid-mailchimp .getwid-field-label__required .components-base-control__field,
+.wp-block-getwid-contact-form .getwid-field-label__required .components-base-control__field {
+  margin: 0;
+}
+
+/*
+ * TODO: WordPress 5.6 - 5.X Fix
+ * Select Multiple
+ * https://github.com/WordPress/gutenberg/issues/27166
+ */
+.components-select-control.getwid-wp56-fix .components-select-control__input,
+.components-getwid-custom-query-control__terms .components-select-control__input,
+.components-getwid-custom-query-control__taxonomy .components-select-control__input {
+  height: auto !important;
+}
+.components-select-control.getwid-wp56-fix .components-input-control__suffix,
+.components-getwid-custom-query-control__terms .components-input-control__suffix,
+.components-getwid-custom-query-control__taxonomy .components-input-control__suffix {
+  display: none !important;
+}
+.components-select-control.getwid-wp56-fix .components-input-control__label,
+.components-getwid-custom-query-control__terms .components-input-control__label,
+.components-getwid-custom-query-control__taxonomy .components-input-control__label {
+  font-size: inherit;
+}
+
+/*
+ * TODO: WordPress 5.6 - 5.X Fix
+ * Limit the editor width to prevent some blocks to grow infinitely wide
+ * https://github.com/WordPress/gutenberg/pull/27695
+ * https://github.com/WordPress/gutenberg/issues/27622
+ *
+ */
+.interface-interface-skeleton__editor {
+  overflow: hidden;
+}
+
+.getwid-custom-pallete .components-panel__body-title {
+  display: none;
+}
+
+.getwid-slider-image-wrapper {
+  margin-bottom: 0.5em;
+  line-height: 0;
+}
+.getwid-slider-image-wrapper img {
+  max-width: 33%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 75px;
+  border: 1px solid #f7f7f7;
+}
+
+.getwid-background-image-wrapper {
+  cursor: pointer;
+  padding: 5px;
+  border: 1px solid #e2e4e7;
+  margin-bottom: 0.5em;
+  line-height: 0;
+  position: relative;
+  text-align: center;
+}
+.getwid-background-image-wrapper img {
+  max-height: 150px;
+  position: relative;
+}
+.getwid-background-image-wrapper:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), linear-gradient(to left, black 50%, white 50%), linear-gradient(to bottom, black 50%, white 50%);
+  background-blend-mode: normal, difference, normal;
+  background-size: 20px 20px;
+}
+
+.getwid-editor-tabs {
+  margin-bottom: 1.5em;
+}
+.getwid-editor-tabs:not(.left) .components-tab-panel__tabs {
+  text-align: left;
+}
+.getwid-editor-tabs.left .components-tab-panel__tabs {
+  text-align: right;
+}
+.getwid-editor-tabs .components-tab-panel__tabs {
+  margin-bottom: -1px;
+}
+.getwid-editor-tabs .components-tab-panel__tabs .components-button {
+  text-decoration: none;
+  padding: 2px 8px 4px;
+  height: auto !important;
+  border-top: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  border-bottom: 1px solid #e2e4e7;
+}
+.getwid-editor-tabs .components-tab-panel__tabs .components-button.is-active {
+  color: inherit;
+  border-top: 1px solid #e2e4e7;
+  border-right: 1px solid #e2e4e7;
+  border-left: 1px solid #e2e4e7;
+  border-bottom: 1px solid #ffffff;
+}
+.getwid-editor-tabs .components-tab-panel__tab-content {
+  padding: 1em;
+  border: 1px solid #e2e4e7;
+}
+.getwid-editor-tabs .components-tab-panel__tab-content > *:last-child {
+  margin-bottom: 0;
+}
+.getwid-editor-tabs .components-tab-panel__tab-content > *:last-child > .components-base-control__field {
+  margin-bottom: 0;
+}
+
+.getwid-font-size-control .getwid-editor-tabs,
+.getwid-slider-height-control .getwid-editor-tabs {
+  margin-bottom: 0;
+}
+
+.getwid-editor-url-input .components-base-control__field input {
+  width: 100%;
+}
+
+.wp-block-getwid-custom-post-type__template .wp-block-columns {
+  display: flex;
+}
