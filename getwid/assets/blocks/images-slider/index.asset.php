@@ -1,1 +1,1 @@
-<?php return array('dependencies' => array('getwid-components', 'jquery', 'react-jsx-runtime', 'wp-blob', 'wp-block-editor', 'wp-blocks', 'wp-components', 'wp-data', 'wp-element', 'wp-i18n'), 'version' => '40234d885e938fd0fa62');
+<?php return array('dependencies' => array('getwid-components', 'jquery', 'react-jsx-runtime', 'wp-blob', 'wp-block-editor', 'wp-blocks', 'wp-components', 'wp-data', 'wp-element', 'wp-i18n'), 'version' => '528c63c576163c1eb160');
